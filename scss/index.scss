@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 900;
+  font-family: 'Oswald';
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Oswald';
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Oswald';
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #afb281;
+  margin-left: 0px;
+}
+
+.header__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.header__middle {
+  li:nth-child(1) {
+    text-decoration: underline;
+  }
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.header__basket {
+  width: auto;
+  visibility: hidden;
+}
+
+.header__basket2 {
+  /*Veldur því að punktar í header eru ekki alveg fyrir miðju. 
+  
+  Setti samt padding-left hjá head__middle svo kannski í lagi...*/
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.header ul {
+  list-style-type: none;
+  text-align: center;
+  li a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000000;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #cc9694;
+  padding-bottom: 100px;
+}
+
+.botn {
+  padding-top: 70px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__content__under {
+  padding-right: 100px;
+}
+
+.footer {
+  h2 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  ul {
+    list-style-type: none;
+    li a {
+      text-decoration: none;
+      color: #ffffff;
+      /*bæta við padding/margin á milli punkta*/
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.grid__col {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.text {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+  h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  button {
+    padding: 10px 40px;
+    background-color: #cc9694;
+    text-align: center;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+.karfa {
+  width: 16px;
+}
+
+.grid__row:nth-child(2) {
+  flex-flow: column-reverse;
+}
+
+@media (min-width: 800px) {
+  .grid__col {
+    width: 50%;
+  }
+  .grid__row {
+    flex-direction: row !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text {
+    padding: 0px;
+  }
+  .header__head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .header__basket2 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid__row, .footer__content {
+    padding: 0 0 0 0;
+  }
+  .header__basket2 a {
+    padding-right: 5px;
+  }
+}
