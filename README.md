@@ -56,6 +56,8 @@ Setja þarf upp package.json og sækja viðeigandi pakka til að tæki og tól s
 
 
 Samstarfsmenn:
-Eiríkur Egill Gíslason
-Hrafnkell Þráinsson
+Eiríkur Egill Gíslason,
+Hrafnkell Þráinsson,
 Þorri Harðarson
+
+Ekki tókst að útfæra þetta í scss, en gerð var tilraun til þess að færa kóðann úr css yfir á scss form.
