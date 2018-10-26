@@ -53,3 +53,9 @@ Eftirfarandi er sett upp í verkefni:
 index.html með vísun í styles.css og grid.css ásamt tómum skrám fyrir products.html, about.html og cart.html undir pages/, halda skal þessu skipulagi
 grid.css til að sjá grid sem fyrirmynd er unnin eftir
 Setja þarf upp package.json og sækja viðeigandi pakka til að tæki og tól sem verkefnið á að nýta virki.
+
+
+Samstarfsmenn:
+Eiríkur Egill Gíslason
+Hrafnkell Þráinsson
+Þorri Harðarson
